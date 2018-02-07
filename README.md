@@ -35,9 +35,9 @@ open your apps edit page.
 6. Edit config file of this package(./config) and put required informations below.
 ```
 TOKEN="[YOUR ACCESS TOKEN]"
-AT_OFFICE="[YOUR OFFICES WIFI NAME]"
-AT_OFFICE_2="[ANOTHER OFFICES WIFI NAME]"
-AT_HOME="[YOUR HOMES WIFI NAME]"
+AT_OFFICE_WIFI="[YOUR OFFICES WIFI NAME]"
+AT_OFFICE_2_WIFI="[ANOTHER OFFICES WIFI NAME]"
+AT_HOME_WIFI="[YOUR HOMES WIFI NAME]"
 ```
 
 7. Enter this command to load all settings. Finished!
@@ -51,7 +51,7 @@ This has 3 states depends on WiFi-ID and Mac's states.
 | status        | AT OFFICE                | AT HOME             | SLEEP       |
 | ------------- | ------------------------ | ------------------- | ----------- |
 | Mac's state   | Active                   | Active              | sleep       |
-| WiFi-ID       | AT_OFFICE or AT_OFFICE_2 | AT_HOME             | whatever    |
+| WiFi-ID       | AT_OFFICE_WIFI or AT_OFFICE_2_WIFI | AT_HOME_WIFI             | whatever    |
 | default text  | at office                | at home             | not working |
 | default emoji | :school:                 | :house_with_garden: | :zzz:       |
 
