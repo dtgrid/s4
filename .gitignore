@@ -1,0 +1,7 @@
+# Ignore all files but image files
+/*
+!/License
+!/*.png
+!/*.jpg
+!/*.jpeg
+!/*.svg

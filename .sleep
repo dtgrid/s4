@@ -1,6 +1,0 @@
-#!/bin/sh -eu
-. ./config
-POST_DATA='profile={"status_text": "'$SLEEP_STATUS_TEXT'","status_emoji": "'$SLEEP_STATUS_EMOJI'"}'
-curl -XPOST -d "token="$TOKEN \
-    --data-urlencode "${POST_DATA}" \
-    https://slack.com/api/users.profile.set
