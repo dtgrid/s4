@@ -2,7 +2,6 @@
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](License)
 
 ## Description
-===================  
 A simple bash package for changing slack status automatically designed for Mac users.  
 This package monitors your Mac's state and automatically switches slack status depends on WiFi-ID.  
 
@@ -25,9 +24,13 @@ open your apps edit page.
 
 3. Click the **OAuth and Permissions** and scroll the page until **Scopes panel**.  
 
+![Scopes panel](../images/scopes.png?raw=true)
+
 4. Choose **Access user's profile and workspace profile fields** and **Modify user's profile**. Then save changes.
 
 5. Copy **OAuth Access Token** on the top of this page.
+
+![OAuth Access Token](../images/access_token.png?raw=true)
 
 6. Edit config file of this package(./config) and put required informations below.
 ```
@@ -44,8 +47,9 @@ AT_HOME="[YOUR HOMES WIFI NAME]"
 
 ## Advanced Usage
 This has 3 states depends on WiFi-ID and Mac's states.  
+
 | status        | AT OFFICE                | AT HOME             | SLEEP       |
-|:------------- |:------------------------ | ------------------- | ----------- |
+| ------------- | ------------------------ | ------------------- | ----------- |
 | Mac's state   | Active                   | Active              | sleep       |
 | WiFi-ID       | AT_OFFICE or AT_OFFICE_2 | AT_HOME             | whatever    |
 | default text  | at office                | at home             | not working |
