@@ -9,8 +9,8 @@
 	<array>
 		<string>/usr/local/sbin/sleepwatcher</string>
 		<string>-V</string>
-		<string>-s ~/s4/.sleep</string>
-		<string>-w ~/s4/.wakeup</string>
+		<string>-s PWD/.sleep</string>
+		<string>-w PWD/.wakeup</string>
 	</array>
 
 	<key>RunAtLoad</key>

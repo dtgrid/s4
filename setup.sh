@@ -12,7 +12,7 @@ brew install sleepwatcher > /dev/null
 printf "################         (80%%)\r"
 
 # load to LaunchAgents
-cp de.bernhard-baehr.sleepwatcher.plist ~/Library/LaunchAgents/
-launchctl unload ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
-launchctl load ~/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher.plist
+sed -i '' -e 's!PWD!'$PWD'!g' de.bernhard-baehr.sleepwatcher.plist
+launchctl unload $PWD"/de.bernhard-baehr.sleepwatcher.plist"
+launchctl load $PWD"/de.bernhard-baehr.sleepwatcher.plist"
 printf "####################     (100%%)\r"
