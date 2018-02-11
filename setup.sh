@@ -11,8 +11,12 @@ printf "############             (60%%)\r"
 brew install sleepwatcher > /dev/null
 printf "################         (80%%)\r"
 
-# load to LaunchAgents
+# modify current directory
+sed -i '' -e 's!PWD!'$PWD'!g' .sleep
+sed -i '' -e 's!PWD!'$PWD'!g' .wakeup
 sed -i '' -e 's!PWD!'$PWD'!g' de.bernhard-baehr.sleepwatcher.plist
+
+# load to LaunchAgents
 launchctl unload $PWD"/de.bernhard-baehr.sleepwatcher.plist"
 launchctl load $PWD"/de.bernhard-baehr.sleepwatcher.plist"
 printf "####################     (100%%)\r"

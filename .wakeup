@@ -1,5 +1,5 @@
 #!/bin/sh -eu
-. ./config
+. PWD/config
 sleep $SLEEP_SECONDS
 SSID=$(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep " SSID" | tr -d " " | cut -c6-)
 if [ ${SSID} = ${AT_OFFICE_WIFI} -o ${SSID} = ${AT_OFFICE_WIFI_2} ]; then
