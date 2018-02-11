@@ -19,26 +19,26 @@ If any error occurs, please refer [HomeBrew official](https://brew.sh/) and inst
 ## Installation
 1. `git clone git@github.com:dgrid/s4.git` or download this repository.
 
-2. If you don't have your slack apps yet, [create slack apps](https://api.slack.com/slack-apps#creating_apps) on your Slack account.  
+2. If you don't have your slack api app yet, [create slack apps](https://api.slack.com/slack-apps#creating_apps) on your Slack account.  
 
-3. Open your app's edit page.  
+3. Open [your slack app's page](https://api.slack.com/apps) and click the app you just made.  
 
-4. Click the **OAuth and Permissions** and scroll the page until **Scopes panel**.  
+4. Click the **OAuth and Permissions** button on menu and scroll the page until **Scopes panel**.  
 
 <img src="../images/scopes.png" width="700px">
 
 5. Choose **Access user's profile and workspace profile fields** and **Modify user's profile**. Then save changes.
 
-6. Click "Copy **OAuth Access Token**" on the top of current page.
+6. Click "Copy **OAuth Access Token**" button on the top of current page.
 
 <img src="../images/access_token.png" width="700px">
 
-7. Edit config file of this package(s4/config) and text required informations.
+7. Edit config file of this package(s4/config) and paste required informations.
 ```
-TOKEN="[YOUR ACCESS TOKEN]"
-AT_OFFICE_WIFI="[YOUR OFFICES WIFI NAME]"
-AT_OFFICE_WIFI_2="[ANOTHER OFFICES WIFI NAME]"
-AT_HOME_WIFI="[YOUR HOMES WIFI NAME]"
+TOKEN="YOUR ACCESS TOKEN"
+AT_OFFICE_WIFI="YOUR OFFICES WIFI NAME"
+AT_OFFICE_WIFI_2="ANOTHER OFFICES WIFI NAME"
+AT_HOME_WIFI="YOUR HOMES WIFI NAME"
 ```
 
 8. Enter this command to load all settings. Finished!

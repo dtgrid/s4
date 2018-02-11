@@ -17,6 +17,6 @@ sed -i '' -e 's!PWD!'$PWD'!g' .wakeup
 sed -i '' -e 's!PWD!'$PWD'!g' de.bernhard-baehr.sleepwatcher.plist
 
 # load to LaunchAgents
-launchctl unload $PWD"/de.bernhard-baehr.sleepwatcher.plist"
+launchctl unload $PWD"/de.bernhard-baehr.sleepwatcher.plist" 2> /dev/null
 launchctl load $PWD"/de.bernhard-baehr.sleepwatcher.plist"
 printf "####################     (100%%)\r"
